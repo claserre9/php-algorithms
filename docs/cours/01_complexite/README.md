@@ -34,7 +34,7 @@ f(n) = 7              →  O(1)
 
 ```mermaid
 graph LR
-    A[O(1)] --> B[O(log n)] --> C[O(n)] --> D[O(n log n)] --> E[O(n²)] --> F[O(2ⁿ)] --> G[O(n!)]
+    A["O(1)"] --> B["O(log n)"] --> C["O(n)"] --> D["O(n log n)"] --> E["O(n^2)"] --> F["O(2^n)"] --> G["O(n!)"]
 ```
 
 | Complexité | Nom | n=10 | n=100 | n=1 000 |
