@@ -1,0 +1,93 @@
+site_name: Algorithmes & Structures de données en PHP
+site_description: Du débutant à l'expert — complexité, structures, tri, graphes, programmation dynamique, tout en PHP 8.x.
+site_author: Clifford
+site_url: https://claserre9.github.io/php-algorithms/
+repo_url: https://github.com/claserre9/php-algorithms
+repo_name: claserre9/php-algorithms
+edit_uri: edit/main/
+copyright: "Licence MIT — contenu libre de droits"
+
+docs_dir: docs
+
+theme:
+  name: material
+  language: fr
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep-purple
+      accent: deep-purple
+      toggle:
+        icon: material/weather-sunny
+        name: Mode sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep-purple
+      accent: deep-purple
+      toggle:
+        icon: material/weather-night
+        name: Mode clair
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - navigation.instant
+    - navigation.instant.prefetch
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+    - search.highlight
+    - search.suggest
+    - search.share
+
+plugins:
+  - search:
+      lang: fr
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Accueil: index.md
+  - "Partie 1 — Fondations":
+      - "1. Complexité algorithmique": cours/01_complexite/README.md
+      - "2. Tableaux & listes dynamiques": cours/02_tableaux_listes/README.md
+      - "3. Piles, files & deques": cours/03_piles_files/README.md
+      - "4. Listes chaînées": cours/04_listes_chainees/README.md
+  - "Partie 2 — Structures avancées":
+      - "5. Tables de hachage": cours/05_tables_hachage/README.md
+      - "6. Arbres binaires & BST": cours/06_arbres/README.md
+      - "7. Tas & files de priorité": cours/07_tas_priorites/README.md
+      - "8. Graphes": cours/08_graphes/README.md
+  - "Partie 3 — Algorithmes":
+      - "9. Algorithmes de tri": cours/09_tri/README.md
+      - "10. Algorithmes de recherche": cours/10_recherche/README.md
+      - "11. Programmation dynamique": cours/11_dynamique/README.md
+      - "12. Gloutons & Diviser pour régner": cours/12_gloutons_diviser/README.md
